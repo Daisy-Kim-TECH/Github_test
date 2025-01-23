@@ -1,0 +1,109 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: Black;
+    text-align: left;
+    font-family: Optima, sans-serif;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+ul {
+    background-color: lightgrey;
+    list-style-type: none;
+    margin: 0 80px 0 80px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    font-family: Optima, sans-serif;
+}
+
+
+.active {
+    background-color: grey;
+}
+
+p {
+    font-family: Optima, sans-serif;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+div {
+    background-color: lightgrey;
+    width: 100%;
+    max-width:925px;
+    height: 300px;
+    padding: 30px;
+    margin: 0 80px 0 80px;
+    font-family: Optima, sans-serif;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.styled-text {
+    line-height: 1.5;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: flex-start;
+    align-items: center; /* 이미지와 텍스트를 세로 중앙 정렬 */
+    flex-direction: column; /* 텍스트를 이미지 아래에 배치 */
+    text-align: center;
+    flex-wrap: warp;
+    gap: 10px;
+}
+
+.image-with-text img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    object-fit: contain;
+}
+
+.image-with-text p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-left: 0;
+    }
+    
+    ul {
+        margin: 0;
+    }
+
+    .image-with-text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-with-text img {
+        width: 80%;
+        max-width: 100%;
+    }
+}
